@@ -1,0 +1,40 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background:black;
+
+}
+.btn
+{
+    padding: 20px 32px;
+    font-size: 28px;
+    margin: 10px;
+    background: none;
+    color: #fff;
+    border:1px solid #666;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+
+}
+.btn::before{
+    content: '';
+    position: absolute;
+    height: 20px;
+    top:80px;
+    width: 50px;
+    left: 15px;
+    background: #868686;
+    transform: perspective(80px) rotateX(-120deg);
+    filter: blur(20px);
+
+    
+}
+.active, .btn:hover{
+    background-color: #ce1919;
+    color:black;
+    box-shadow: 0 0 26px 1px yellow;
+    border:1px solid yellow; 
+}
